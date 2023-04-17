@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Serverless Layers",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "devDependencies": {
     "serverless": "^3.21.0"

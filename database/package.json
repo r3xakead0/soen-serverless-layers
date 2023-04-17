@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Database Modules",
   "engines": {
-    "node": "16.x"
+    "node": "18x"
   },
   "dependencies": {
     "pg": "^8.7.3",

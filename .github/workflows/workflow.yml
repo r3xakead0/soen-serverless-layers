@@ -1,11 +1,11 @@
-name: Deploy
+name: Build Lambda Layer
 
 on:
   push:
     branches: [ "develop" ]
     
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
