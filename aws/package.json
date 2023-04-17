@@ -1,0 +1,11 @@
+{
+  "name": "serverless-layer-aws",
+  "version": "1.0.0",
+  "description": "AWS Modules",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.282.0"
+  }
+}

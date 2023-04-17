@@ -1,0 +1,22 @@
+service: serverless-layer
+frameworkVersion: '3'
+
+package:
+  individually: true
+  excludeDevDependencies: true
+  
+provider:
+  name: aws
+  runtime: nodejs16.x
+  profile: soen	
+ 
+layers:
+  AwsModules:
+    path: aws
+    description: AWS modules
+  CommonModules:
+    path: common
+    description: Common modules
+  DatabaseModules:
+    path: database
+    description: Database modules
