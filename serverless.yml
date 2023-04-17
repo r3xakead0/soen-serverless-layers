@@ -10,12 +10,7 @@ provider:
   runtime: nodejs18.x
  
 layers:
-  AwsModules:
-    path: aws
-    description: AWS modules
-  CommonModules:
-    path: common
-    description: Common modules
-  DatabaseModules:
-    path: database
-    description: Database modules
+ NodeModules:
+    path: NodeModules
+    name: ${sls:stage}-NodeModules
+    description: Node Modules

@@ -11,19 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install dependencies for AWS Modules
+      - name: Install dependencies for Node Modules
         run: |
-          cd aws/
-          npm install
-
-      - name: Install dependencies for Common Modules
-        run: |
-          cd common/
-          npm install
-          
-      - name: Install dependencies for Database Modules
-        run: |
-          cd database/
+          cd modules/
           npm install
           
       - name: Deploy using sls

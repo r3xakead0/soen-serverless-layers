@@ -1,11 +1,12 @@
 {
-  "name": "serverless-layer-common",
+  "name": "serverless-layer-modules",
   "version": "1.0.0",
-  "description": "Common Modules",
+  "description": "Node Modules",
   "engines": {
     "node": "18.x"
   },
   "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.282.0",
     "argon2": "^0.28.7",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
