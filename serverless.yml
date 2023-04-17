@@ -10,7 +10,7 @@ provider:
   runtime: nodejs18.x
  
 layers:
- NodeModules:
-    path: NodeModules
-    name: ${sls:stage}-NodeModules
-    description: Node Modules
+  NodeModules:
+    path: modules
+    name: ${sls:stage}-modules
+    description: NodeJS Modules
