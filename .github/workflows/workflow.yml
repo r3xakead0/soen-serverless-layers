@@ -11,17 +11,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install dependencies for AWS
+      - name: Install dependencies for AWS Modules
         run: |
           cd aws/
           npm install
 
-      - name: Install dependencies for COMMON
+      - name: Install dependencies for Common Modules
         run: |
           cd common/
           npm install
           
-      - name: Install dependencies for DATABASE
+      - name: Install dependencies for Database Modules
         run: |
           cd database/
           npm install
+          
+      - name: Deploy using sls
+        run: |
+          npm install -D
+          npx sls deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
