@@ -11,5 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: list
-        run: ls -l
+      - name: Install dependencies for AWS
+        run: |
+          cd aws/
+          npm install
+
+      - name: Install dependencies for COMMON
+        run: |
+          cd common/
+          npm install
+          
+      - name: Install dependencies for DATABASE
+        run: |
+          cd database/
+          npm install
