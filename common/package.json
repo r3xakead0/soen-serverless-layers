@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Common Modules",
   "engines": {
-    "node": "18x"
+    "node": "18.x"
   },
   "dependencies": {
     "argon2": "^0.28.7",
