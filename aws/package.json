@@ -5,6 +5,7 @@
   "engines": {
     "node": "18x"
   },
+  "type": "module",
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.282.0"
   }
